@@ -29,7 +29,6 @@ nav>ul>li>a{
 #bars_container>div{
     border:1px solid red;
     /* min-height: 100px; */
-    min-width: 8%;
 }
 
 

@@ -12,6 +12,9 @@ let gen = document.getElementById("gen_rand_array")
 //gsenrate random array
 gen.addEventListener("click",rand_array)
 function rand_array(){
+  //feature: randome color everytime
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+
     //init html of bars_container in div in HTML page
 
     cont.innerHTML="";
@@ -24,7 +27,7 @@ function rand_array(){
       cont.appendChild(divs[i]);
       margin_size=0.1;
       //giving width  to bar and for a proper loop with the help of random numbers and size of array so that it covers the whole screeen 
-      divs[i].style="margin:0%"+ margin_size +"%; background-color:blue; width:"+(1000/array_size-(2*margin_size))+"%; height:"+ (div_sizes[i]+10)+"%;" ; 
+      divs[i].style="margin:0%"+ margin_size +"%; background-color: #"+randomColor+"; width:"+(1000/array_size-(2*margin_size))+"%; height:"+ (div_sizes[i]+10)+"%;" ; 
     }
 
 }
