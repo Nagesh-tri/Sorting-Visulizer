@@ -20,4 +20,16 @@ nav>ul>li>a{
     text-decoration: none;
 }
 
+#bars_container{
+    min-height: 300px;
+    border: 1px solid teal;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+#bars_container>div{
+    border:1px solid red;
+    /* min-height: 100px; */
+    min-width: 8%;
+}
+
 
