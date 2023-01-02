@@ -34,3 +34,9 @@ function rand_array(){
 
 
 
+//check
+//for bubble
+document.getElementById("bub").addEventListener("click",bubble)
+
+
+
