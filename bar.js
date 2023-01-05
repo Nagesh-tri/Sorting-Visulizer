@@ -6,6 +6,8 @@ let divs=[];
 
 let cont =document.getElementById("bars_container")
 let gen = document.getElementById("gen_rand_array")
+let bubbleSortBtn = document.getElementById("bubble")
+let selectionSortBtn = document.getElementById("selection")
 //cont style
 
 
@@ -28,6 +30,9 @@ function rand_array(){
     }
 
 }
+bubbleSortBtn.addEventListener("click",bubble)
+selectionSortBtn.addEventListener("click",selection)
+
 
 
 
