@@ -2,7 +2,7 @@
   
   //coppied function for visulization
   //but also modified
-  let delay_time=50;
+  let delay_time=1000;
   let c_delay=0;
   function div_update(cont,height,color)
   {
