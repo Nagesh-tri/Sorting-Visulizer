@@ -1,6 +1,6 @@
 
 //variables
-let array_size=10;
+let array_size=100;
 let div_sizes=[];   //arrary for random array size in
 let divs=[];
 

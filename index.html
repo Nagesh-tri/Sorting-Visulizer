@@ -21,17 +21,40 @@
         <div class="collapse navbar-collapse"id="mobile">
             
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link">bubble</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Selection</a></li>
-                <li class="nav-item"><a href="" class="nav-link">insertion</a></li>
+                <li id="bubble" class="nav-item "><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                    <a id="bub" href="#" class="nav-link">
+                        bubble
+                    </a>
+                </li>
+                <li  class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link" id="selc">
+                        Selection
+                    </a>
+                </li>
+                <li id="" class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link" id="insertion">
+                        insertion
+                    </a>
+                </li>
             </ul>
         </div>
         
         <button id="mode" >Light</button>
     </nav>
-    <h2 class=" py-3 text-center"> Sorting-Visulizer</h2>
-    <div>
+    
+    <!-- /taking user input of array size and -->
+    <div class="md-6 text-center ">
+        <h2 class=" py-3 text-center"> Sorting-Visulizer</h2>
+        <input type="number" min="10" max="100">
+        <p>Size of Array</p>
+        <input type="number" min="1" max="1000">
+        <p>Speed of Algorithm</p>
+        <div class="md-5 d-grid">
+            <button id="gen_rand_array" class="btn btn-dark"></button>
+        </div>
+    </div>
+    <div id="bars_container"></div>
     
 
 </body>
@@ -44,9 +67,9 @@
 <!-- change theam -->
 <script src="./scripts/Ui_update/theme.js"></script>
 <!-- logic -->
-<!-- <script src="./scripts/visulize.js"></script>
+<script src="./scripts/visulize.js"></script>
 <script src="./scripts/insertion.js"></script>
 <script src="./scripts/selection.js"></script>
 <script src="./scripts/bubble.js"></script>
-<script src="./scripts/bar.js"></script> -->
+<script src="./scripts/bar.js"></script>
 </html>
