@@ -1,5 +1,7 @@
 //buble sorting
 function bubble(){
+  //delay time
+  c_delay=0;
   for(var i=0;i<array_size-1;i++){
     
     for(var j=0;j<array_size-i-1;j++){
@@ -21,7 +23,6 @@ function bubble(){
     div_update(divs[j],div_sizes[j],"Green") //element has been sorted
   }
   div_update(divs[0],div_sizes[0],"Green")
-  c_delay=0;
 
 }
 

@@ -1,6 +1,8 @@
 //in this we find minimum of given and swap it with beganing
 
 function selection(){
+    //delay time
+    c_delay=0;
     for(let i=0;i<array_size-1;i++){
         let min_index=i;
         div_update(divs[min_index],div_sizes[min_index],"pink");//smallest element as pinkk
@@ -35,7 +37,6 @@ function selection(){
     //for last element which has been already sorted after the entire process
     
     div_update(divs[array_size-1],div_sizes[array_size-1], "green");//color update
-    c_delay=0;
 }
 
 ////done
