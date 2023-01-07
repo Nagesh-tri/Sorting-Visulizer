@@ -3,4 +3,4 @@
 
 deployed Link--
 (checkout live)
-hhttps://nagesh-tri.github.io/Sorting-Visulizer/
+https://nagesh-tri.github.io/Sorting-Visulizer/
