@@ -44,15 +44,26 @@
     </nav>
     
     <!-- /taking user input of array size and -->
-    <div class="md-6 text-center ">
-        <h2 class=" py-3 text-center"> Sorting-Visulizer</h2>
-        <input type="number" min="10" max="100">
-        <p>Size of Array</p>
-        <input type="number" min="1" max="1000">
-        <p>Speed of Algorithm</p>
-        <div class="md-5 d-grid">
-            <button id="gen_rand_array" class="btn btn-dark"></button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mr-auto">
+    
+                <p class="mr-auto">Size of Array</p>
+                <input id="a_size" type="number" min="10" max="100" step="5" value="10">
+            </div>
+            <div class="col-md-4">
+                <h2 class=" py-3 text-center"> Sorting-Visulizer</h2>
+    
+            </div>
+            <div class="col-md-4">
+    
+                <p>Speed of Algorithm</p>
+                <input type="number" min="1" max="1000">
+            </div>
         </div>
+    </div>
+    <div class="text-center">
+        <button id="gen_rand_array" class="btn btn-dark"></button>
     </div>
     <div id="bars_container"></div>
     
