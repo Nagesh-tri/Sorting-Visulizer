@@ -1,11 +1,13 @@
 
 //variables
-let array_size=10;
+var inp_as=document.getElementById("a_size");
+let array_size=inp_as.value;
 let div_sizes=[];   //arrary for random array size in
 let divs=[];
 
 let cont =document.getElementById("bars_container")
 let gen = document.getElementById("gen_rand_array")
+
 
 
 /////
@@ -16,9 +18,11 @@ let gen = document.getElementById("gen_rand_array")
 //gsenrate random array
 gen.addEventListener("click",rand_array)
 function rand_array(){
+  //testing
+  console.log(array_size);
   //feature: randome color everytime
   const randomColor = Math.floor(Math.random()*16777215).toString(16);
-
+  
     //init html of bars_container in div in HTML page
 
     cont.innerHTML="";
@@ -36,8 +40,14 @@ function rand_array(){
 
 }
 
+//update array size
+inp_as.addEventListener("input",update_array_size);
 
-
+function update_array_size()
+{
+  array_size=inp_as.value;
+  rand_array();
+}
 //check
 //for bubble
 document.getElementById("bub").addEventListener("click",bubble)
